@@ -9,9 +9,6 @@
 
 <body>
     <header class="header">
-        <a class="logo">
-            <img src="#" alt="Логотип сайта Device">
-        </a>
         <!---Здесь будет input-->
         <ul class="users">
             <li class="users__item">
@@ -133,23 +130,30 @@
         </section>
         <section class="slider2">
             <h2 class="visually-hidden">Наши услуги</h2>
+            <ul class="slider2-button">
+                <li class="slider2-button__item">
+                    <button class="button">Доставка</button>
+                </li>
+                <li class="slider2-button__item">
+                    <button class="button">Гарантия</button>
+                </li>
+                <li class="slider2-button__item">
+                    <button class="button">Кредит</button>
+                </li>
+            </ul>
             <ul class="slider2-list">
                 <li class="slider2-list__item">
-                    <button class="button">Доставка</button>
                     <h2>Доставка</h2>
                     <p class="text">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                        Ведь мы
-                        неплохо заработаем, поднимая его на ваш этаж.</p>
+                        Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
                 </li>
                 <li class="slider2-list__item">
-                    <button class="button">Гарантия</button>
                     <h2>Гарантия</h2>
                     <p class="text">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы
                         выдадим вам
                         новый. Товар, не дом, конечно же..</p>
                 </li>
                 <li class="slider2-list__item">
-                    <button class="button">Кредит</button>
                     <h2>Кредит</h2>
                     <p class="text">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее
                         выгодные
@@ -198,9 +202,9 @@
         </section>
     </main>
     <footer class="footer">
-        <a class="logo">
-            <img src="#" alt="Логотип сайта Device">
-        </a>
+        <p class="logo__text">
+            <a href="#">Device</a>
+        </p>
         <p>г. Москва, ул. Строителей, 15</p>
         <ul class="footer-menu">
             <li class="footer-menu__item">
@@ -224,8 +228,21 @@
             <li class="interactive-footer__item"><a href="">Корзина</a></li>
         </ul>
         <p class="text">Тел.: +7 (495) 495-95-95</p>
-        <img src="#" alt="Логотип HTML Academy">
+        <a href="#">
+            <img src="#" alt="Логотип HTML Academy">
+        </a>
     </footer>
+    <section class="modal-map">
+        <h2 class="visually-hidden">Как проехать?</h2>
+        <img src="#" alt="Карта проезда">
+        <span class="modal-close">x</span>
+    </section>
+    <section class="modal-write">
+        <h2 class="visually-hidden">Напишите нам</h2>
+        <!--Здесь будет форма-->
+        <button class="button">Отправить</button>
+        <span class="modal-close">x</span>
+    </section>
 </body>
 
 </html>
