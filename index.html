@@ -10,6 +10,10 @@
 <body>
     <header class="header">
         <a class="logo">Device</a>
+        <p class="search-input">
+            <label for="id-text" class="visually-hidden">Поиск по сайту</label>
+            <input type="text" name="text" id="id-text" placeholder="Поиск по сайту">
+        </p>
         <ul class="login">
             <li class="login__item">
                 <a class="login__link" href="#">
@@ -299,7 +303,7 @@
             <a href="#">
                 <img src="img/map.jpg" alt="Карта проезда">
             </a>
-            <button class="button contacts__button-small">Напишите нам</button>
+            <a class="button contacts__button-small" href="#">Напишите нам</a>
         </section>
     </main>
     <footer class="footer">
@@ -385,14 +389,27 @@
     </footer>
     <section class="modal-map">
         <h2 class="visually-hidden">Как проехать?</h2>
-        <img src="#" alt="Карта проезда">
-        <span class="modal-close">x</span> //button
+        <img src="#" alt="Адрес компании: Москва, ул. Строителей 15">
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal-write">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <!--Здесь будет форма-->
-        <button class="button">Отправить</button>
-        <span class="modal-close">x</span> //button
+        <form class="modal-write-form" action="yandex.ru" method="POST">
+            <p class="modal-write-form-item">
+                <label class="form-label" for="id-name">Ваше имя</label>
+                <input class="form-input form-input_size_small" type="text" name="name" id="id-name" placeholder="Имя Фамилия">
+            </p>
+            <p class="modal-write-form-item">
+                <label class="form-label" for="id-email">Ваш e-mail</label>
+                <input class="form-input form-input_size_small" type="email" name="email" id="id-email" placeholder="email@example.com">
+            </p>
+            <p class="modal-write-form-item">
+                <label class="form-label" for="id-desc">Текст письма</label>
+                <textarea name="desc" id="id-desc" cols="30" rows="10"></textarea>
+            </p>
+            <button class="button">Отправить</button>
+        </form>
+        <button class="modal-close" type="button">Закрыть</button>
     </section>
 </body>
 
