@@ -19,7 +19,7 @@
                     Поиск по сайту
                 </label>
                 <input class="search__input" type="text" name="text" id="id-text" placeholder="Поиск по сайту">
-                <button class="button button_bg_transparent search__button" type="submit">
+                <button class="button button_bg_transparent search__button" type="button">
                     Найти
                 </button>
             </form>
@@ -55,31 +55,31 @@
         <nav class="main-navigation">
             <ul class="menu-main">
                 <li class="menu-main__page menu-main_hover">
-                    <a class="menu-main__title title_h3 menu-main_modal" href="#">
+                    <a class="menu-main__title title_h3 menu-main_modal" href="catalog.html">
                         <span class="menu-main_animation">Каталог товаров</span>
                     </a>
                     <ul class="menu-main__modal-content">
                         <div class="menu-main__category-wrap">
                             <li class="menu-modal__page">
-                                <a class="menu-modal__link" href="#">Виртуальная реальность</a>
+                                <a class="menu-modal__link" href="catalog.html">Виртуальная реальность</a>
                             </li>
                             <li class="menu-modal__page">
-                                <a class="menu-modal__link" href="#">Моноподы для селфи</a>
+                                <a class="menu-modal__link" href="catalog.html">Моноподы для селфи</a>
                             </li>
                             <li class="menu-modal__page">
-                                <a class="menu-modal__link" href="#">Экшн-камеры</a>
+                                <a class="menu-modal__link" href="catalog.html">Экшн-камеры</a>
                             </li>
                         </div>
                         <div class="menu-main__category-wrap">
                             <li class="menu-modal__page">
-                                <a class="menu-modal__link" href="#">Фитнес-браслеты</a>
+                                <a class="menu-modal__link" href="catalog.html">Фитнес-браслеты</a>
                             </li>
                             <li class="menu-modal__page">
-                                <a class="menu-modal__link" href="#">Умные часы</a>
+                                <a class="menu-modal__link" href="catalog.html">Умные часы</a>
                             </li>
                         </div>
                         <li class="menu-main__category-wrap">
-                            <a class="menu-modal__link" href="#">Квадрокоптеры</a>
+                            <a class="menu-modal__link" href="catalog.html">Квадрокоптеры</a>
                         </li>
                     </ul>
                 </li>
@@ -104,31 +104,20 @@
     <main class="main">
         <h1 class="visually-hidden">Интернет магазин Device</h1>
         <section class="slider-product">
-            <div class="container">
+            <div class="container slider-product-wrap">
                 <h2 class="visually-hidden">Наши спецпредложения</h2>
                 <ul class="slider-list">
-                    <input class="visually-hidden" type="radio" id="slide-product-1" name="slide-product" checked>
-                    <input class="visually-hidden" type="radio" id="slide-product-2" name="slide-product">
-                    <input class="visually-hidden" type="radio" id="slide-product-3" name="slide-product">
-                    <li class="slider-list__item" id="slide-1">
-                        <img class="slider-list__photo" src="img/slider-1.png" alt="Самая длинна палка для селфи"
-                            height="486">
+                    <li class="slider-list__item display_flex">
+                        <img class="slider-list__photo" src="img/slider-1.png" alt="Самая длинна палка для селфи">
                         <div class="slider-list__body">
                             <p class="title_h1 slider__title">Делай селфи,<br> как Бен Стиллер</p>
                             <p class="text slider-list__text">Самая длинная палка для селфи доступна в нашем магазине.
                                 Восемь
                                 (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
                             </p>
-                            <div class="slider-list__buttons-area">
-                                <a class="button" href="#">
-                                    Подробнее
-                                </a>
-                                <div class="slider-controls">
-                                    <label class="slider-controls__label" for="slide-product-1">Первый слайд</label>
-                                    <label class="slider-controls__label" for="slide-product-2">Второй слайд</label>
-                                    <label class="slider-controls__label" for="slide-product-3">Третий слайд</label>
-                                </div>
-                            </div>
+                            <a class="button" href="#">
+                                Подробнее
+                            </a>
                             <dl class="feature">
                                 <div class="feature__wrap">
                                     <dt class="feature__term">8,5 м</dt>
@@ -145,21 +134,14 @@
                             </dl>
                         </div>
                     </li>
-                    <li class="slider-list__item" id="slide-2">
+                    <li class="slider-list__item">
                         <img class="slider-list__photo" src="img/slider-2.png" alt="Мотивирующий фитнес-браслет">
                         <div class="slider-list__body">
                             <p class="title_h1 slider__title">Худеем <br> правильно!</p>
                             <p class="text slider-list__text">Мотивирующие фитнес-браслеты помогут найти в себе силы не
                                 пропускать
                                 занятия и соблюдать диету.</p>
-                            <div class="slider-list__buttons-area">
-                                <a href="#" class="button slider__button">Подробнее</a>
-                                <div class="slider-controls">
-                                    <label class="slider-controls__label" for="slide-product-1">Первый слайд</label>
-                                    <label class="slider-controls__label" for="slide-product-2">Второй слайд</label>
-                                    <label class="slider-controls__label" for="slide-product-3">Третий слайд</label>
-                                </div>
-                            </div>
+                            <a href="#" class="button">Подробнее</a>
                             <dl class="feature">
                                 <div class="feature__wrap">
                                     <dt class="feature__term">48 часов</dt>
@@ -168,22 +150,15 @@
                             </dl>
                         </div>
                     </li>
-                    <li class="slider-list__item" id="slide-3">
+                    <li class="slider-list__item">
                         <img class="slider-list__photo" src="img/slider-3.png" alt="Квадракоптер с мощным лазером">
                         <div class="slider-list__body">
                             <p class="title_h1 slider__title">Порхает как бабочка, жалит как пчела!</p>
                             <p class="text slider-list__text">Этот обычный, на первый взгляд, квадрокоптер оснащен
                                 мощным лазером, замаскированным под стандартную камеру. </p>
-                            <div class="slider-list__buttons-area">
-                                <a href="#" class="button">
-                                    Подробнее
-                                </a>
-                                <div class="slider-controls">
-                                    <label class="slider-controls__label" for="slide-product-1">Первый слайд</label>
-                                    <label class="slider-controls__label" for="slide-product-2">Второй слайд</label>
-                                    <label class="slider-controls__label" for="slide-product-3">Третий слайд</label>
-                                </div>
-                            </div>
+                            <a href="#" class="button">
+                                Подробнее
+                            </a>
                             <dl class="feature">
                                 <div class="feature__wrap">
                                     <dt class="feature__term">800 м</dt>
@@ -197,15 +172,19 @@
                         </div>
                     </li>
                 </ul>
+                <div class="slider-controls">
+                    <div class="slider-controls__item js-buttons-slider" data-img="0">Первый слайд</div>
+                    <div class="slider-controls__item" data-img="1">Второй слайд</div>
+                    <div class="slider-controls__item" data-img="2">Третий слайд</div>
+                </div>
             </div>
-            <!--Здесь будут переключалки-->
         </section>
         <section class="categories">
             <div class="container">
                 <h2 class="visually-hidden">Категории</h2>
                 <ul class="categories-list categories__categories-list">
                     <li class="categories-list__item">
-                        <a class="categories-list__link" href="#">
+                        <a class="categories-list__link" href="catalog.html">
                             <div class="categories__svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="97" height="55" fill="#363636">
                                     <path
@@ -216,7 +195,7 @@
                         </a>
                     </li>
                     <li class="categories-list__item">
-                        <a class="categories-list__link" href="#">
+                        <a class="categories-list__link" href="catalog.html">
                             <div class="categories__svg">
                                 <svg class="flex_as_flex-end" xmlns="http://www.w3.org/2000/svg" width="86" height="117"
                                     fill="#363636">
@@ -228,7 +207,7 @@
                         </a>
                     </li>
                     <li class="categories-list__item">
-                        <a class="categories-list__link" href="#">
+                        <a class="categories-list__link" href="catalog.html">
                             <div class="categories__svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="71" height="87" fill="#363636">
                                     <path
@@ -246,7 +225,7 @@
                         </a>
                     </li>
                     <li class="categories-list__item">
-                        <a class="categories-list__link" href="#">
+                        <a class="categories-list__link" href="catalog.html">
                             <div class="categories__svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="107" height="65" fill="#363636">
                                     <path
@@ -257,7 +236,7 @@
                         </a>
                     </li>
                     <li class="categories-list__item">
-                        <a class="categories-list__link" href="#">
+                        <a class="categories-list__link" href="catalog.html">
                             <div class="categories__svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="56" height="98" fill="#363636">
                                     <path
@@ -268,7 +247,7 @@
                         </a>
                     </li>
                     <li class="categories-list__item">
-                        <a class="categories-list__link" href="#">
+                        <a class="categories-list__link" href="catalog.html">
                             <div class="categories__svg">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="132" height="69" fill="#363636">
                                     <path
@@ -287,17 +266,17 @@
                 <div class="slider-column">
                     <ul class="button-list">
                         <li class="button-list__item">
-                            <button class="button button_current button-list__button">Доставка</button>
+                            <button class="button button-list__button js-button-list__button" data-img="0">Доставка</button>
                         </li>
                         <li class="button-list__item">
-                            <button class="button button-list__button">Гарантия</button>
+                            <button class="button button-list__button" data-img="1">Гарантия</button>
                         </li>
                         <li class="button-list__item">
-                            <button class="button button-list__button">Кредит</button>
+                            <button class="button button-list__button" data-img="2">Кредит</button>
                         </li>
                     </ul>
                     <ul class="desc-list">
-                        <li class="desc-list__item">
+                        <li class="desc-list__item display_block">
                             <h2 class="title_h1 desc-list__title">Доставка</h2>
                             <p class="text desc-list__text">Мы с удовольствием доставим ваш товар прямо к вашему
                                 подъезду совершенно
@@ -394,7 +373,7 @@
                             <li class="company__item">Автотрейдинг</li>
                             <li class="company__item">ЖелДорЭкспедиция</li>
                         </ul>
-                        <a class="button about__button" href="#">Подробнее о нас</a>
+                        <a class="button about__button js-openPopup" href="#" data-popup="modal-map">Подробнее о нас</a>
                 </section>
                 <section class="contacts">
                     <h2 class="title_h1 contacts__title">Контакты</h2>
@@ -405,7 +384,7 @@
                     <a class="contacts__cart" href="#">
                         <img src="img/map.jpg" alt="Карта проезда">
                     </a>
-                    <a class="button contacts__button" href="#">Напишите нам</a>
+                    <a class="button contacts__button js-openPopup" href="#" data-popup="modal-write">Напишите нам</a>
                 </section>
             </div>
         </div>
@@ -500,30 +479,45 @@
             </div>
         </div>
     </footer>
-    <section class="modal-map">
+    <section class="modal-map js-popup">
         <h2 class="visually-hidden">Как проехать?</h2>
-        <img src="img/map.jpg" alt="Адрес компании: Москва, ул. Строителей 15">
-        <button class="modal-close" type="button">Закрыть</button>
+        <img src="img/map-big.png" alt="Адрес компании: Москва, ул. Строителей 15">
+        <button class="modal-close js-close" type="button">Закрыть</button>
     </section>
-    <section class="modal-write">
+    <section class="modal-write js-modal-write js-popup">
         <h2 class="visually-hidden">Напишите нам</h2>
-        <form class="modal-write-form" action="yandex.ru" method="POST">
-            <p class="modal-write-form-item">
-                <label class="form-label" for="id-name">Ваше имя</label>
-                <input class="form-input" type="text" name="name" id="id-name" placeholder="Имя Фамилия">
+        <form class="modal-write-form js-modal-write-form" action="yandex.ru" method="POST">
+            <div class="modal-write-wrap">
+                <p class="modal-write-form__item modal-write-form_width_360px">
+                    <label class="modal-write-form__label title_h3 modal-write-form__title" for="id-name">Ваше
+                        имя</label>
+                    <input class="modal-write-form__input js-input" type="text" name="name" id="id-name"
+                        placeholder="Имя и фамилия" pattern="^[А-Яа-яЁё\s]+$">
+                    <span class="js-status-img"></span>
+                </p>
+                <p class="modal-write-form__item modal-write-form_width_360px">
+                    <label class="modal-write-form__label title_h3 modal-write-form__title" for="id-email">Ваш
+                        e-mail</label>
+                    <input class="modal-write-form__input js-input" type="email" name="email" id="id-email"
+                        placeholder="email@example.com" pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$">
+                    <span class="js-status-img"></span>
+                </p>
+            </div>
+            <p class="modal-write-form__item">
+                <label class="modal-write-form__label title_h3 modal-write-form__title" for="id-desc">Текст
+                    письма</label>
+                <textarea class="modal-write-form__input js-input" name="desc" id="id-desc" cols="30" rows="10"
+                    placeholder="В свободной форме"></textarea>
+                <span class="js-status-img"></span>
             </p>
-            <p class="modal-write-form-item">
-                <label class="form-label" for="id-email">Ваш e-mail</label>
-                <input class="form-input" type="email" name="email" id="id-email" placeholder="email@example.com">
-            </p>
-            <p class="modal-write-form-item">
-                <label class="form-label" for="id-desc">Текст письма</label>
-                <textarea name="desc" id="id-desc" cols="30" rows="10"></textarea>
-            </p>
-            <button class="button">Отправить</button>
+            <button class="button modal-write-form__button js-button">Отправить</button>
         </form>
-        <button class="modal-close" type="button">Закрыть</button>
+        <button class="modal-close js-close" type="button">Закрыть</button>
     </section>
+    <div class="overlay js-overlay"></div>
+    <script src="popup.js"></script>
+    <script src="main-slider.js"></script>
+    <script src="benefits-slider.js"></script>
 </body>
 
 </html>

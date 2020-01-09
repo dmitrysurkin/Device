@@ -125,11 +125,24 @@
                     <h2 class="title_h3 title_h3_small-spacing filter__filter-title">Фильтр</h2>
                     <form class="filter-form" action="yandex.ru" method="GET">
                         <fieldset class="filter-form__price">
-                            <legend class="title_h3 filter-form__title">Стоимость</legend>
+                            <legend class="title_h3 filter-form__title filter-form__price-title">Стоимость</legend>
                             <ul class="filter-form__list">
                                 <li class="filter-form__item">
-                                    <label class="filter-form__label visually-hidden" for="id-price">Стоимость</label>
-                                    <input type="range" name="price" id="id-price" min="0" max="5000" step="100">
+                                    <div class="range-filter">
+                                        <div class="range-filter__controls">
+                                            <div class="range-filter__scale">
+                                                <div class="range-filter__bar"></div>
+                                            </div>
+                                            <div class="range-filter__toggle range-filter__toggle-min"></div>
+                                            <div class="range-filter__toggle range-filter__toggle-max"></div>
+                                        </div>
+                                        <div class="range-filter__price-controls">
+                                            <input class="visually-hidden" type="text" id="id-range-min" name="range-min">
+                                            <label class="text range-filter__text-min" for="id-range-min">от 0</label>
+                                            <input class="visually-hidden" type="text" id="id-range-max" name="range-min">
+                                            <label class="text range-filter__text-max" for="id-range-min"> до 5000</label>
+                                        </div>
+                                    </div>
                                 </li>
                             </ul>
                         </fieldset>
@@ -176,7 +189,7 @@
                                 </li>
                             </ul>
                         </fieldset>
-                        <button class="button filter-form__button" type="submit">Показать</button>
+                        <button class="button filter-form__button" type="button">Показать</button>
                     </form>
                 </section>
                 <section class="carts">
@@ -361,7 +374,7 @@
                 <ul class="social">
                     <li class="social__item">
                         <a class="social__link" href="#">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32">
+                            <svg class="svg__anim" xmlns="http://www.w3.org/2000/svg" width="32" height="32">
                                 <path fill="#fff"
                                     d="M16 0C7.164 0 0 7.163 0 16s7.164 16 16 16 16-7.164 16-16S24.837 0 16 0zm4.062 9.455h-3.02V12.9h3.02v3.445h-3.02v8.6h-3.02v-8.6H11V12.9h3.02V9.455C14.02 7.553 15.374 6 17.042 6h3.02v3.445z" />
                             </svg>
