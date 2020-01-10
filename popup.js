@@ -1,12 +1,11 @@
-//Находим все кнопки, которые должны вызывать попап окно
-const buttonsOpenPopup = document.querySelectorAll('.js-openPopup');
-const buttonsClosePopup = document.querySelectorAll('.js-close');//зачем нам все кнопки? нужна только та, которая относится к конкретному окну (хз как сделать)
+const buttonsOpenPopup = document.querySelectorAll('.js-open-popup');
+const buttonsClosePopup = document.querySelectorAll('.js-close');
 const popupModalWrite = document.querySelector('.js-modal-write');
-const inputsModalWrite = popupModalWrite.querySelectorAll('.js-input'); //зачем нам все попапы? Нужны только те, которые относятся к конкретному окну!! (+ГОТОВО)
+const inputsModalWrite = popupModalWrite.querySelectorAll('.js-input');
 const statusImg = popupModalWrite.querySelectorAll('.js-status-img')
-const inputName = document.getElementById('id-name');//зачем все имена? (+ГОТОВО)
-const inputEmail = document.getElementById('id-email');//зачем все емайлы? (+ГОТОВО)
-const inputComment = document.getElementById('id-desc');//зачем все комменты? (+ГОТОВО)
+const inputName = document.getElementById('id-name');
+const inputEmail = document.getElementById('id-email');
+const inputComment = document.getElementById('id-desc');
 const buttonModalWrite = popupModalWrite.querySelector('.js-button');
 const overlay = document.querySelector('.js-overlay');
 
@@ -70,7 +69,10 @@ function openPopup(elem) {
 }
 
 function closePopup(elem) {
-    elem.closest('.js-popup').classList.remove('js-animation-open-popup');
+    const classNamePopup = elem.getAttribute('data-popup');
+    const popup = document.querySelector(`.${classNamePopup}`);
+
+    popup.classList.remove('js-animation-open-popup')
     overlay.classList.remove('display_block');
     document.body.style.overflow = "auto";
 

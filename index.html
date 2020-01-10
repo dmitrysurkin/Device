@@ -373,7 +373,7 @@
                             <li class="company__item">Автотрейдинг</li>
                             <li class="company__item">ЖелДорЭкспедиция</li>
                         </ul>
-                        <a class="button about__button js-openPopup" href="#" data-popup="modal-map">Подробнее о нас</a>
+                        <a class="button about__button js-open-popup" href="#" data-popup="modal-map">Подробнее о нас</a>
                 </section>
                 <section class="contacts">
                     <h2 class="title_h1 contacts__title">Контакты</h2>
@@ -384,7 +384,7 @@
                     <a class="contacts__cart" href="#">
                         <img src="img/map.jpg" alt="Карта проезда">
                     </a>
-                    <a class="button contacts__button js-openPopup" href="#" data-popup="modal-write">Напишите нам</a>
+                    <a class="button contacts__button js-open-popup" href="#" data-popup="modal-write">Напишите нам</a>
                 </section>
             </div>
         </div>
@@ -479,12 +479,12 @@
             </div>
         </div>
     </footer>
-    <section class="modal-map js-popup">
+    <section class="modal-map">
         <h2 class="visually-hidden">Как проехать?</h2>
         <img src="img/map-big.png" alt="Адрес компании: Москва, ул. Строителей 15">
-        <button class="modal-close js-close" type="button">Закрыть</button>
+        <button class="modal-close js-close" type="button" data-popup="modal-map">Закрыть</button>
     </section>
-    <section class="modal-write js-modal-write js-popup">
+    <section class="modal-write js-modal-write">
         <h2 class="visually-hidden">Напишите нам</h2>
         <form class="modal-write-form js-modal-write-form" action="yandex.ru" method="POST">
             <div class="modal-write-wrap">
@@ -512,7 +512,7 @@
             </p>
             <button class="button modal-write-form__button js-button">Отправить</button>
         </form>
-        <button class="modal-close js-close" type="button">Закрыть</button>
+        <button class="modal-close js-close" type="button" data-popup="modal-write">Закрыть</button>
     </section>
     <div class="overlay js-overlay"></div>
     <script src="popup.js"></script>
